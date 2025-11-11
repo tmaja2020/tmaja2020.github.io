@@ -1,0 +1,474 @@
+/* PWP Styles */
+
+.pwp-dashboard .edit-site-sidebar-navigation-screen__content button[id="/go-pro"] .components-flex-item::after {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f08e';
+    font-weight: 600;
+    margin-left: 12px;
+}
+.pwp-dashboard .edit-site-sidebar-navigation-screen__content button[id="/site-design"] .components-flex-item::after {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f08e';
+    font-weight: 600;
+    margin-left: 12px;
+}
+.pwp-dashboard h1, .pwp-dashboard h2, .pwp-dashboard h3, .pwp-dashboard h4, .pwp-dashboard h5, .pwp-dashboard h6 {
+    line-height: 1.1;
+}
+
+/* Layout */
+
+.pwp-dashboard .edit-site-layout__canvas {
+    background: #fff;
+    border-radius: 8px;
+    overflow: auto;
+}
+.pwp-dashboard .pwp-dashboard-logo {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+.pwp-dashboard .wp-block-post-content.wp-block-post-content {
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+.pwp-dashboard .edit-site-site-hub__text-content {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.pwp-dashboard .edit-site-site-hub__site-title {
+    color: #e0e0e0;
+    flex-grow: 1;
+    font-size: 15px;
+    font-weight: 500;
+}
+.pwp-dashboard .edit-site-site-hub__container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    gap: calc(8px);
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+.pwp-dashboard .components-resizable-box__container {
+    position: relative;
+    user-select: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 320px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+.pwp-dashboard .edit-site-site-hub__site-view-link svg {
+    fill: #e0e0e0;
+}
+.pwp-dashboard .edit-site-sidebar-navigation-screen__title-icon {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: calc(16px);
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+.pwp-dashboard .edit-site-sidebar-navigation-screen__title {
+    line-height: 1.2;
+    margin: 0px;
+    color: rgb(224, 224, 224);
+    font-size: calc(20px);
+    font-weight: 600;
+    display: block;
+}
+.pwp-dashboard .edit-site-sidebar-navigation-item {
+    font-size: 13px;
+    font-family: inherit;
+    appearance: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: none;
+    text-align: start;
+    padding: calc(9.2px) 12px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    color: inherit;
+    border-radius: 2px;
+}
+.pwp-dashboard .edit-site-sidebar-button {
+    width: 100%;
+}
+.pwp-dashboard .edit-site-sidebar-button > h1 {
+    margin-left: 12px;
+}
+.pwp-dashboard .edit-site-sidebar-navigation-item > .components-flex {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    gap: calc(8px);
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.pwp-dashboard .edit-site-sidebar-navigation-item > .components-flex > .components-flex-item {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    flex: 1 1 0%;
+}
+
+/* Content */
+
+.pwp-dashboard .site-main {
+    padding: 48px;
+}
+.pwp-dashboard .entry-content {
+    max-width: 1310px;
+    position: relative;
+    z-index: 2;
+}
+#bg-wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+    height: 50%;
+	z-index: 1;
+	opacity: 0.4;
+}
+#bg-wrap > svg {
+	overflow: visible;
+}
+.pwp-dashboard .pwp-admin-container {
+    position: relative;
+    background: #fff;
+    padding: 36px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.pwp-setup-steps h3,
+.pwp-dashboard .pwp-admin-container h2 {
+    margin-top: 0;
+}
+.pwp-dashboard .pwp-admin-container .form-table {
+    display: block;
+    padding-top: 12px;
+    margin-top: 24px;
+    border-top: 1px solid #e0e0e0;
+}
+.pwp-dashboard .pwp-admin-blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 18px;
+}
+.pwp-dashboard .pwp-admin-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-basis: calc(33.33% - 18px);
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transform: translateY(0);
+    transition: all .25s ease-in-out;
+}
+.pwp-dashboard .pwp-admin-block:hover {
+    transform: translateY(-6px);
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
+}
+.pwp-dashboard .pwp-admin-block-content {
+    height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.pwp-dashboard .pwp-admin-block-icon {
+    background-color: var(--wp--preset--color--accent-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    border-radius: 3px;
+}
+.pwp-dashboard .pwp-admin-block .wp-block-button {
+    padding: 18px 24px;
+    border-top: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.pwp-dashboard .wp-block-button__link {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--wp--preset--color--dark-gray);
+    background-color: var(--wp--preset--color--accent-primary);
+    border: 2px solid transparent !important;
+    transition: all .25s ease-in-out;
+}
+.pwp-dashboard .wp-block-button__link:hover {
+    border-color: var(--wp--preset--color--dark-gray) !important;
+}
+.pwp-dashboard .has-large-font-size {
+    margin-bottom: 0;
+}
+.pwp-dashboard #pwp-admin-intro > p {
+    margin-top: 16px;
+}
+.pwp-dashboard #pwp-license p.description {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Features Table */
+
+.pwp-dashboard .pwp-features {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 36px;
+    box-sizing: border-box;
+}
+.pwp-dashboard .pwp-features-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.pwp-dashboard .pwp-features-table tr {
+    line-height: 3;
+}
+.pwp-dashboard .pwp-features-table tbody > tr > th {
+    padding: 12px;
+}
+.pwp-dashboard .pwp-features-table tbody > tr:first-child > th:first-child {
+    text-align: left;
+}
+.pwp-dashboard .pwp-features-table tbody > tr > td {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+}
+.pwp-dashboard .pwp-features-table tbody > tr > td > img {
+    line-height: 0;
+    vertical-align: middle;
+}
+.pwp-dashboard .pwp-features-table tbody > tr > th:nth-child(2),
+.pwp-dashboard .pwp-features-table tbody > tr > td:nth-child(2) {
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.pwp-dashboard .pwp-features-table tbody > tr:last-child > td:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+}
+.pwp-dashboard .pwp-features-table tbody > tr > td:first-child {
+    font-weight: 600;
+}
+.pwp-dashboard .pwp-features-table tbody > tr > td:not(:first-child) {
+    text-align: center;
+}
+.pwp-dashboard .pwp-features-table tbody > tr:nth-child(even) > td {
+    background-color: #eee;
+}
+.pwp-dashboard .pwp-features-table tbody > tr:last-child > td {
+    background: none;
+}
+.pwp-dashboard .pwp-features-table tbody > tr:nth-child(even) > td:first-child {
+    border-radius: 6px 0 0 6px;
+}
+.pwp-dashboard .pwp-features-table tbody > tr:nth-child(even) > td:last-child {
+    border-radius: 0 6px 6px 0;
+}
+.pwp-dashboard .pwp-features-table .wp-block-button {
+    margin-top: 24px;
+}
+
+/* Setup Wizard */
+
+.pwp-dashboard #pwp-theme-setup {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    column-gap: 0;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.pwp-dashboard #pwp-theme-setup > .pwp-setup-nav {
+    flex-basis: 20%;
+    padding: 24px;
+    background-color: #eee;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.pwp-dashboard #pwp-theme-setup > .pwp-setup-nav h3 + p {
+    margin-top: 12px;
+}
+.pwp-dashboard #pwp-theme-setup > .pwp-setup-nav ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.pwp-dashboard #pwp-theme-setup > .pwp-setup-nav ul li::before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    background-image: url("/wp-content/themes/portfolio-wp/assets/images/blank.png");
+    background-size: contain;
+    vertical-align: middle;
+}
+.pwp-dashboard #pwp-theme-setup > .pwp-setup-nav ul li.active::before {
+    background-image: url("/wp-content/themes/portfolio-wp/assets/images/check.png");
+}
+.pwp-dashboard #pwp-theme-setup > .pwp-setup-steps {
+    flex-basis: 80%;
+    padding: 36px;
+    box-sizing: border-box;
+}
+.pwp-dashboard .pwp-setup-step > h2 {
+    margin-top: 0;
+}
+
+/* Create Pages */
+
+.pwp-dashboard .pwp-page-selection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
+}
+.pwp-dashboard .pwp-page-selection .pwp-box {
+    position: relative;
+    max-width: 320px;
+    line-height: 0;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transform: translateY(0);
+    transition: all .25s ease-in-out;
+    overflow: hidden;
+}
+.pwp-dashboard .pwp-page-selection .pwp-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
+}
+.pwp-dashboard .pwp-page-selection .pwp-box .pwp-page-thumb {
+    background-color: #1A1A1A;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #e0e0e0;
+    max-height: 320px;
+    height: 100%;
+    overflow: scroll;
+}
+.pwp-dashboard .pwp-page-selection .pwp-box .pwp-page-thumb > img {
+    max-width: 100%;
+}
+.pwp-dashboard .pwp-page-selection .pwp-box .pwp-checked {
+    display: flex;
+    align-items: center;
+}
+.pwp-dashboard .pwp-page-selection .pwp-box > .pwp-box-select,
+.pwp-dashboard .pwp-page-selection .pwp-box > .components-checkbox-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+.pwp-dashboard .pwp-page-selection .pwp-box .components-checkbox-control > div {
+    margin-bottom: 0;
+}
+
+/* Homepage setup */
+
+.pwp-dashboard .pwp-panels {
+	background-color: #F6F6F6;
+	margin: 20px 0;
+	padding: 20px;
+	border-radius: 8px;
+	width: 100%;
+}
+.pwp-dashboard .pwp-panels .components-base-control__label {
+    margin-bottom: 16px;
+}
+.pwp-dashboard .components-radio-control__input[type=radio] {
+	width: 20px;
+    min-width: 20px;
+	height: 20px;
+}
+.pwp-dashboard .components-radio-control__label {
+	font-size: 14px;
+}
+.pwp-dashboard .components-radio-control .components-flex {
+	gap: 16px;
+}
+.pwp-dashboard .pwp-pill {
+	background-color: #e0e0e0;
+    font-size: 11px;
+    line-height: 1.1;
+	border-radius: 12px;
+	padding: 3px 8px;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+}
+.pwp-dashboard .pwp-pill.pro {
+    color: #fff;
+    background-color: #FB4E4E;
+    border-color: #FB4E4E;
+}
+
+.pwp-dashboard .pwp-tool-button {
+	margin:0 10px 10px 0
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width: 1340px) {
+    .pwp-dashboard .pwp-page-selection {
+        grid-template-columns: auto auto;
+    }
+    .pwp-dashboard #pwp-theme-setup {
+        flex-direction: column;
+        row-gap: 0;
+    }
+    .pwp-dashboard #pwp-theme-setup > .pwp-setup-nav {
+        border-right: 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .edit-site.pwp-dashboard,
+    .pwp-dashboard .edit-site-layout__canvas {
+        position: relative;
+    }
+    .pwp-dashboard > .edit-site-layout > .edit-site-layout__content,
+    .pwp-dashboard .pwp-admin-blocks-container {
+        flex-direction: column;
+    }
+    .pwp-dashboard > .edit-site-layout > .edit-site-layout__content > .edit-site-layout__canvas-container {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}

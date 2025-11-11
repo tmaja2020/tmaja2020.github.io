@@ -1,0 +1,91 @@
+/************************************************
+Gutenberg Editor
+************************************************/
+
+/* Body */
+
+.site-header,
+.site-main {
+	margin-top: 0px !important;
+}
+.editor-styles-wrapper .wp-block-navigation.mobile-menu,
+.editor-styles-wrapper .site-header .header-side .mobile-menu-container {
+	display: block;
+}
+.site-logo-wrapper > .site-logo-alt.position-absolute {
+	position: relative;
+	background-color: #dddddd;
+	opacity: 1 !important;
+}
+.wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__container .has-child .wp-block-navigation__submenu-container {
+	min-width: 240px !important;
+}
+div[data-type="obb/hero-block"] {
+	margin-top: 0px;
+}
+.is-content-justification-center {
+	justify-content: center;
+}
+.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > .wp-block-post-title {
+	margin-bottom: var(--wp--style--block-gap);
+}
+.editor-styles-wrapper ul.wp-block-list li {
+	list-style: outside !important;
+	margin-left: 24px;
+	padding-left: 0;
+}
+.editor-styles-wrapper .marquee__group {
+	animation-play-state: paused !important;
+}
+
+/* Editor Alignment Fix */
+
+.is-layout-constrained > .wp-block.alignleft {
+	margin-left: calc((100% - var(--wp--style--global--content-size)) / 2) !important;
+}
+.is-layout-constrained > .wp-block.alignright {
+	margin-right: calc((100% - var(--wp--style--global--content-size)) / 2) !important;
+}
+.wp-block figure.alignleft {
+	margin-right: 24px;
+}
+.wp-block figure.alignright {
+	margin-left: 24px;
+}
+.editor-styles-wrapper .portfolio-staggered.wp-block-group ul li:nth-child(3) > .wp-block-group {
+	justify-content: flex-end;
+}
+.editor-styles-wrapper .portfolio-staggered.wp-block-group ul li:nth-child(1) > .wp-block-group,
+.editor-styles-wrapper .portfolio-staggered.wp-block-group ul li:nth-child(4) > .wp-block-group {
+	justify-content: flex-start;
+}
+
+/* Form Elements */
+
+input[type="checkbox"], input[type="radio"] {
+	margin-bottom: 0;
+}
+
+/* WooCommerce */
+
+.wc-blocks-filter-wrapper {
+    min-width: 180px;
+}
+.wc-block-product-categories.wc-block-product-categories ul {
+	margin-left: 0;
+}
+ul.woocommerce-search-list__list, ul.woocommerce-search-list__list li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.wp-block-woocommerce-checkout .block-editor-block-list__layout {
+	padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.editor-styles-wrapper .wp-block-navigation.desktop-menu,
+	.editor-styles-wrapper .site-header .header-side .social-menu-container {
+		display: block;
+	}
+}

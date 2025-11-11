@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@wordpress/scripts": "^27.0.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "dependencies": {
+    "react-canvas-confetti": "^2.0.7"
+  }
+}
